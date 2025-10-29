@@ -1,0 +1,23 @@
+model_name: 3DGS+GSLiDAR
+
+camera:
+  render_model_loader: 
+    info: gs.model_loader.GaussianInfo
+    object: gs.model_loader.ModelLoader
+  sensor_loader: 
+    info: basic.cameras.PinholeCamInfo
+    object: gs.camera_loader.CameraLoader
+  renderer: 
+    info: gs.renderer.RazterizerSettings
+    object: gs.renderer.GaussianRenderer
+
+lidar:
+  render_model_loader:
+    info: gslidar.model_loader.GSLidarModelInfo
+    object: gslidar.model_loader.GSLidarModelLoader
+  sensor_loader:
+    info: gslidar.lidar_loader.GSLidarInfo
+    object: gslidar.lidar_loader.GSLidarLoader
+  renderer:
+    info: gslidar.renderer.RazterizerSettings
+    object: gslidar.renderer.GSLidarRenderer

@@ -1,0 +1,6 @@
+model_name: StreetGaussian+DummyLiDAR
+
+model_0:
+  modality: camera
+  simple_loader: street_gaussian.simple_loader.StreetGaussianSimpleLoader
+  simple_renderer: street_gaussian.simple_renderer.StreetGaussianSimpleRenderer

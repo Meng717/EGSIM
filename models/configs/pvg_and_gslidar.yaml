@@ -1,0 +1,25 @@
+model_name: PVG+GSLiDAR
+
+model_0:
+  modality: camera
+  render_model_loader: 
+    info: pvg.model_loader.PVGInfo
+    object: pvg.model_loader.PVGModelLoader
+  sensor_loader: 
+    info: pvg.camera_loader.PVGCameraInfo
+    object: pvg.camera_loader.PVGCameraLoader
+  renderer: 
+    info: pvg.renderer.RazterizerSettings
+    object: pvg.renderer.PVGRenderer
+
+model_1:
+  modality: lidar
+  render_model_loader:
+    info: gslidar.model_loader.GSLidarModelInfo
+    object: gslidar.model_loader.GSLidarModelLoader
+  sensor_loader:
+    info: gslidar.lidar_loader.GSLidarInfo
+    object: gslidar.lidar_loader.GSLidarLoader
+  renderer:
+    info: gslidar.renderer.RazterizerSettings
+    object: gslidar.renderer.GSLidarRenderer
