@@ -126,7 +126,7 @@ After these steps, the EGSIM GUI should be able to run. It should be noted that 
 
 ### Preparation for rendering models
 
-In the released code, we provide implementations of four rendering models: 3DGS based on [Gsplat](https://github.com/nerfstudio-project/gsplat), [PVG](https://github.com/fudan-zvg/PVG), [GS-LiDAR](https://github.com/fudan-zvg/GS-LiDAR), and [Street Gaussians](https://github.com/zju3dv/street_gaussians) (quick implementation). For the preparation of these rendering models, you can refer to the corresponding tutorials. 
+In the released code, we provide implementations of four rendering models: 3DGS based on [Gsplat](https://github.com/nerfstudio-project/gsplat), [PVG](https://github.com/fudan-zvg/PVG), [GS-LiDAR](https://github.com/fudan-zvg/GS-LiDAR), and [Street Gaussians](https://github.com/zju3dv/street_gaussians). For the preparation of these rendering models, you can refer to the corresponding tutorials. 
 
 PVG and GS-LiDAR can run directly after the environment configuration is completed. If you want to test Street Gaussians model, follow the steps below:
 
