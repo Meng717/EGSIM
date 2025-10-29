@@ -109,10 +109,10 @@ conda activate egsim
 
 #### 3. (Optional) Build the Patchwork module for LiDAR ground point removal
 
-If you want to remove the LiDAR ground points, you need to build the Patchwork module we provided in `modules/patchwork`:
+If you want to remove the LiDAR ground points, you need to build the Patchwork module we provided in `patchwork`:
 
 ```bash
-cd modules/patchwork
+cd patchwork
 mkdir build && cd build
 cmake ..
 make -j8
