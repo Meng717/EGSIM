@@ -6,82 +6,43 @@ EGSIM is an end-to-end real-scene simulator for autonomous driving based on 3D G
 
 ## 🎥 Demonstrations
 
-### 1. Simulation Process
+### 1. Closed-loop Simulation
 
-<div style="display: flex; justify-content: center; gap: 10px; margin: 0 0;">
-  <div style="text-align: center;">
-    <img src="assets/waymo_rgb.gif" width="800">
-    <p style="margin-top: 8px;">RGB (based on <a href="https://github.com/fudan-zvg/PVG">PVG</a>)</p>
-  </div>
-  
-  <div style="text-align: center;">
-    <img src="assets/waymo_depth.gif" width="800">
-    <p style="margin-top: 8px;">Depth (based on <a href="https://github.com/fudan-zvg/PVG">PVG</a>)</p>
-  </div>
-</div>
+![closed loop simulation](assets/closed_loop.gif)
 
-<div style="display: flex; justify-content: center; gap: 10px; margin: 0 0;">
-  <div style="text-align: center;">
-    <img src="assets/nuscenes_ground_removal_1.gif" width="800">
-    <p style="margin-top: 8px;">Ground Removal Demo 1 (based on <a href="https://github.com/LimHyungTae/patchwork">Patchwork</a>)</p>
-  </div>
-  
-<div style="text-align: center;">
-    <img src="assets/nuscenes_ground_removal_2.gif" width="800">
-    <p style="margin-top: 8px;">Ground Removal Demo 2 (based on <a href="https://github.com/LimHyungTae/patchwork">Patchwork</a>)</p>
-  </div>
-</div>
+### 2. Multimodal Data Simulation
 
-<div style="display: flex; justify-content: center; gap: 10px; margin: 0 0;">
-  <div style="text-align: center;">
-    <img src="assets/waymo_5_cameras.gif" width="800">
-    <p style="margin-top: 8px;">5 Camera Switching (Waymo)</p>
-  </div>
-  
-  <div style="text-align: center;">
-    <img src="assets/nuscenes_6_cameras.gif" width="800">
-    <p style="margin-top: 8px;">6 Camera Switching (nuScenes)</p>
-  </div>
+#### RGB + LiDAR (Waymo)
 
-  <div style="text-align: center;">
-    <img src="assets/radar.gif" width="800">
-    <p style="margin-top: 8px;">5 Radar Switching (nuScenes)</p>
-  </div>
-</div>
+![RGB+LiDAR](assets/waymo_rgb.gif)
 
-### 2. Collision Detection
+#### Depth + LiDAR (Waymo)
 
-<div style="display: flex; justify-content: center; gap: 10px; margin: 0 0;">
-  <div style="text-align: center;">
-    <img src="assets/foreground_collision.gif" width="800">
-    <p style="margin-top: 8px;">Foreground Collision</p>
-  </div>
-  
-  <div style="text-align: center;">
-    <img src="assets/background_collision.gif" width="800">
-    <p style="margin-top: 8px;">Background Collision</p>
-  </div>
-</div>
+![Depth+LiDAR](assets/waymo_depth.gif)
+
+#### RGB + Radar (nuScenes)
+
+![RGB+Radar](assets/radar.gif)
 
 ### 3. 6-DoF Sensor Pose Transformation
 
-<div style="display: flex; justify-content: center; gap: 10px; margin: 0 0;">
-  <div style="text-align: center;">
-    <img src="assets/camera_transform.gif" width="800">
-    <p style="margin-top: 8px;">Camera</p>
-  </div>
-  
-  <div style="text-align: center;">
-    <img src="assets/lidar_transform.gif" width="800">
-    <p style="margin-top: 8px;">LiDAR</p>
-  </div>
-</div>
+![RGB](assets/camera_transform.gif)
 
-### 4. Closed-loop Simulation
+![LiDAR](assets/lidar_transform.gif)
 
-<div style="text-align: center;">
-  <img src="assets/closed_loop.gif" width="800">
-</div>
+### 4. Other Function Modules
+
+#### Foreground Collision Detection
+
+![foreground collision detection](assets/foreground_collision.gif)
+
+#### Background Collision Detection
+
+![background collision detection](assets/background_collision.gif)
+
+#### Ground Points Removal
+
+![ground points removal](assets/nuscenes_ground_removal_1.gif)
 
 ## 🛠️ Preparations
 
